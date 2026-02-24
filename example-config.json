@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "defaults": {
+    "teleport_domain": "teleport.happening.dev",
+    "tsh_keys_dir": "~/.tsh/keys/teleport.happening.dev",
+    "listen_host": "127.0.0.1",
+    "timeout": 60
+  },
+  "clusters": {
+    "trading-topics-qa": {
+      "app_name": "opensearch-trading-topics-qa",
+      "teleport_url": "https://opensearch-trading-topics-qa.teleport.happening.dev",
+      "port": 9243,
+      "description": "Trading Topics QA Environment"
+    },
+    "content-stage": {
+      "app_name": "opensearch-content-stage",
+      "teleport_url": "https://opensearch-content-stage.teleport.happening.dev",
+      "port": 9244,
+      "description": "Content Stage Environment"
+    }
+  }
+}
